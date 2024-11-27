@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddDbContext<ProductDbContext>(option=>
-option.UseSqlServer("Server=192.168.1.15,1433;Database=ProductsEcommerce;User Id=sa;Password=Admin123!;TrustServerCertificate=True;"));
+option.UseSqlServer("Server=192.168.1.73,1433;Database=ProductsEcommerce;User Id=sa;Password=Admin123!;TrustServerCertificate=True;"));
 
 
 var app = builder.Build();

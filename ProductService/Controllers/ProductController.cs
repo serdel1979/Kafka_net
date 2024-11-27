@@ -24,6 +24,11 @@ namespace ProductService.Controllers
         }
 
 
+        [HttpGet("{Id:int}")]
+        public async Task<ProductModel> GetProductById(int Id)
+        {
+            return await _dbContect.Products.FirstOrDefaultAsync(p => p.Id == Id);
+        }
 
     }
 }
