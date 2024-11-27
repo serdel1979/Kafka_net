@@ -30,7 +30,7 @@ namespace OrderService.Controllers
 
 
         [HttpPost]
-        public async Task<OrderModel> CreateOrder([FromBody] OrderModel order)
+        public async Task<OrderModel> CreateOrder(OrderModel order)
         {
             order.OrderDate = DateTime.Now;
             _context.Orders.Add(order);
